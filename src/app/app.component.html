@@ -8,6 +8,9 @@
         <input (click)="onUpload()" type="submit" class="border-2 hover:bg-slate-100" value="submit">
       </form>
       <p>{{fileSize}}</p>
+      <div class="container" *ngIf="loading"> 
+        <h3>Loading ...</h3> 
+    </div> 
     </div>
 
     <div class="container text-center jumbotron"
@@ -17,9 +20,7 @@
 </div> 
   
 <!--Flag variable is used here-->
-<div class="container" *ngIf="loading"> 
-    <h3>Loading ...</h3> 
-</div> 
+
   
 </div>
 
